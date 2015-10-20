@@ -12,7 +12,7 @@
       this.value = +this.value
       return
     }
-    if ((step | 0) !== step)
+    if (Math.round(step) !== step)
       var l = (this.step).split('.')[1].length
 
     var remainder = Math.abs(value % step)
@@ -42,7 +42,7 @@
       return
     }
 
-    if ((step | 0) !== step)
+    if (Math.round(step) !== step)
       var l = (this.step).split('.')[1].length
 
     var remainder = Math.abs(value % step)
