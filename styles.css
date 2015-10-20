@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/proxima_semibold_macroman/Proxima Nova Semibold.ttf");
+}
+
+.hc-inputnumber-label {
+	position: relative;
+}
+
+.hc-inputnumber-label span {
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	background-size: contain;
+	margin: 6px 14px;
+}
+
+.hc-inputnumber-decrement {
+	background-image: url(img/decrement.svg);
+	left: 0;
+}
+.hc-inputnumber-increment {
+	background-image: url(img/increment.svg);
+	right: 0;
+}
+
+input[type=number] {
+	border: 1px solid #b1b3bb;
+    padding: 0;
+
+    color: #6f717c;
+    font: inherit;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+       	    appearance: none;
+    background-color: inherit;
+
+    width: 77px;
+    height: 22px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 11px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance : none; margin : 0; 
+}
+input[type=number] { 
+	-moz-appearance : textfield; 
+}
